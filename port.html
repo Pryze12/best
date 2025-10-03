@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>C.dev</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
   
   <link
   rel="stylesheet"
@@ -13,42 +14,8 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-p+1R+KmNp7P+r7kCxS9qtkV/9q5V4YlX6yZb+3eO0g5cfGxVHgHkS9gZx0J2mFQ42Ncu3ZGnZsNxQfJXU8lKGg=="
-    
-    referrerpolicy="no-referrer"
-  />
-  <style>
-    body {
-      background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 50%),
-                  radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.05), transparent 50%),
-                  linear-gradient(180deg, #0a0f2c 0%, #000000 100%);
-    }
-    .nav-link {
-      position: relative;
-      transition: color 0.3s;
-    }
-    .nav-link::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: -2px;
-      left: 0;
-      background-color: white;
-      transition: width 0.3s;
-    }
-    .nav-link:hover::after {
-      width: 100%;
-    }
-    /* Floating tech icons animation */
-    @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-  }
-
-  .animate-float {
-    animation: float 4s ease-in-out infinite;
-  }
-  </style>
+    referrerpolicy="no-referrer"/>
+  
 </head>
 <body class="font-sans text-white">
 
@@ -120,7 +87,7 @@
 
  
   <!-- Hero Section -->
-<section id="home" class="pt-24 md:pt-32 h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-20 gap-10">
+<section id="home" class="pt-24 md:pt-32 h-screen flex flex-col md:flex-row items-center justify-center px-6 md:px-20 gap-10 bg-gradient-to-b from-[#0a1f4c] to-black">
 
 
     <!-- Left Content -->
@@ -157,9 +124,10 @@
 
       <!-- Social Icons -->
       <div class="flex gap-4 mt-6">
-        <a href="#" class="text-white hover:text-gray-300 text-2xl transition"><i class="fab fa-github"></i></a>
-        <a href="#" class="text-white hover:text-gray-300 text-2xl transition"><i class="fab fa-linkedin"></i></a>
-        <a href="#" class="text-white hover:text-gray-300 text-2xl transition"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/Pryze12" class="text-white hover:text-white-500 text-2xl transition"><i class="fab fa-github"></i></a>
+  <a href="https://www.facebook.com/pryzegodKK" class="text-white hover:text-blue-500 text-2xl transition"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.instagram.com/carlojay210" class="text-white hover:text-pink-500 text-2xl transition"><i class="fab fa-instagram"></i></a>
+
       </div>
     </div>
 
@@ -196,7 +164,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
         <div class="bg-gray-900 border border-white rounded-xl shadow-md p-6 hover:scale-105 transition-transform duration-300">
           <h3 class="text-white font-semibold text-lg mb-2">Frontend Dev</h3>
-          <p class="text-gray-300 text-sm">Skilled in React, Tailwind CSS, and modern UI development.</p>
+          <p class="text-gray-300 text-sm">Skilled in HTML, CSS, Java, and Tailwind CSS for creating modern, responsive, and user-friendly interfaces.</p>
         </div>
         <div class="bg-gray-900 border border-white rounded-xl shadow-md p-6 hover:scale-105 transition-transform duration-300">
           <h3 class="text-white font-semibold text-lg mb-2">Responsive Design</h3>
@@ -355,137 +323,96 @@
 </script>
 
 
-<!-- Contact Section -->
-<section id="contact" class="py-20 bg-gradient-to-b from-[#0a0f2c] to-black">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <!-- Header -->
-    <h2 class="text-4xl font-bold text-white mb-2" data-aos="fade-down">Contact</h2>
-    <p class="text-gray-400 mb-6" data-aos="fade-down" data-aos-delay="100">
-      Interested in working together? Send me a message
-    </p>
-    <!-- Underline (matching Skills section) -->
-    <div class="w-24 h-1 bg-white mx-auto mb-12 rounded-full"></div>
+<!-- CONTACT PAGE -->
+<section id="contact" class="bg-gradient-to-b from-[#0a0f2c] to-black min-h-screen py-24 px-6 text-white">
+  <div class="max-w-7xl mx-auto">
 
-    <!-- Contact Grid -->
+    <!-- Heading -->
+    <div class="text-center mb-16">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white">GET IN TOUCH</h1>
+      <p class="text-gray-300 mt-3 text-lg md:text-xl">
+        Have a project in mind? Let’s discuss how we can bring your vision to life.
+      </p>
+    </div>
+
+    <!-- Content Grid -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
-      <!-- Left Column: Contact Form -->
-      <div class="bg-gray-900 rounded-xl shadow-md p-8" data-aos="fade-right">
-        <form id="contactForm" class="flex flex-col gap-6">
-          <div>
-            <input type="text" id="name" placeholder="Name" class="bg-gray-800 text-white rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-1 focus:ring-white/40 placeholder-gray-400 transition duration-300">
-            <p class="text-red-500 text-sm mt-1 hidden" id="nameWarning">Please enter your name</p>
+      <!-- Left: Profile Card -->
+      <div class="bg-gradient-to-b from-[#0a0f2c] to-black rounded-2xl shadow-xl p-8 flex flex-col items-center text-center lg:text-left lg:items-start">
+        <!-- Profile Picture -->
+        <img src="img/prof.png" alt="Profile" class="w-32 h-32 rounded-full mb-6 object-cover shadow-lg">
+        <!-- Name & Role -->
+        <h2 class="text-2xl font-bold mb-1">Carlo Jay</h2>
+        <p class="text-blue-400 font-medium mb-6">UI/UX Designer and Frontend Developer</p>
+
+        <!-- Contact Info Boxes -->
+        <div class="flex flex-col gap-4 w-full mb-6">
+          <div class="bg-[#0a0f2c]/50 rounded-lg p-4 flex items-center gap-3 shadow">
+            <i class="fas fa-envelope text-blue-400"></i>
+            <span>carlojay_gasmin@sjp2cd.edu.ph</span>
           </div>
-          <div>
-            <input type="email" id="email" placeholder="Email" class="bg-gray-800 text-white rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-1 focus:ring-white/40 placeholder-gray-400 transition duration-300">
-            <p class="text-red-500 text-sm mt-1 hidden" id="emailWarning">Please enter a valid email</p>
+          <div class="bg-[#0a0f2c]/50 rounded-lg p-4 flex items-center gap-3 shadow">
+            <i class="fas fa-phone-alt text-blue-400"></i>
+            <span>+63 928 761 4434</span>
           </div>
-          <div>
-            <input type="text" id="subject" placeholder="Subject" class="bg-gray-800 text-white rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-1 focus:ring-white/40 placeholder-gray-400 transition duration-300">
-            <p class="text-red-500 text-sm mt-1 hidden" id="subjectWarning">Please enter a subject</p>
+          <div class="bg-[#0a0f2c]/50 rounded-lg p-4 flex items-center gap-3 shadow">
+            <i class="fas fa-map-marker-alt text-blue-400"></i>
+            <span>Davao City, Philippines</span>
           </div>
-          <div>
-            <textarea id="message" placeholder="Message" rows="5" class="bg-gray-800 text-white rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-1 focus:ring-white/40 placeholder-gray-400 transition duration-300"></textarea>
-            <p class="text-red-500 text-sm mt-1 hidden" id="messageWarning">Please enter a message</p>
-          </div>
-          <button type="submit" class="flex items-center justify-center gap-2 bg-white text-black font-semibold px-6 py-3 rounded-lg shadow-sm hover:shadow-md hover:scale-105 transition-all duration-300">
-            <i class="fas fa-paper-plane"></i> Send
-          </button>
-        </form>
+        </div>
+
+        <!-- Follow Me -->
+        <div class="flex gap-4 mt-auto">
+          <a href="#" class="text-gray-300 hover:text-white transition"><i class="fab fa-github"></i></a>
+          <a href="#" class="text-gray-300 hover:text-blue-500 transition"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-gray-300 hover:text-pink-500 transition"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
 
-      <!-- Right Column: Contact Info -->
-      <div class="flex flex-col gap-6" data-aos="fade-left">
-        <!-- Email Card -->
-        <div class="flex items-start gap-4 bg-gray-900 border border-white/20 shadow-md rounded-xl p-6 hover:shadow-lg hover:scale-105 transition duration-300">
-          <div class="text-white text-xl mt-1">
-            <i class="fas fa-envelope"></i>
-          </div>
-          <div class="text-left">
-            <h3 class="text-white font-semibold">Email</h3>
-            <p class="text-gray-300">carlojay@example.com</p>
-          </div>
-        </div>
+      <!-- Right: Contact Form -->
+      <div class="bg-gradient-to-b from-[#0a0f2c] to-black rounded-2xl shadow-xl p-8">
+        <form id="contactForm" class="flex flex-col gap-6">
+          <input type="text" name="user_name" id="name" placeholder="Name" class="bg-[#0a0f2c]/50 text-white placeholder-gray-300 border border-[#0a0f2c] rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-400 focus:outline-none" required>
+          <input type="email" name="user_email" id="email" placeholder="Email" class="bg-[#0a0f2c]/50 text-white placeholder-gray-300 border border-[#0a0f2c] rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-400 focus:outline-none" required>
+          <input type="text" name="subject" id="subject" placeholder="Subject" class="bg-[#0a0f2c]/50 text-white placeholder-gray-300 border border-[#0a0f2c] rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-400 focus:outline-none" required>
+          <textarea name="message" id="message" placeholder="Message" rows="6" class="bg-[#0a0f2c]/50 text-white placeholder-gray-300 border border-[#0a0f2c] rounded-lg px-4 py-3 focus:ring-2 focus:ring-blue-400 focus:outline-none" required></textarea>
 
-        <!-- Phone Card -->
-        <div class="flex items-start gap-4 bg-gray-900 border border-white/20 shadow-md rounded-xl p-6 hover:shadow-lg hover:scale-105 transition duration-300">
-          <div class="text-white text-xl mt-1">
-            <i class="fas fa-phone"></i>
-          </div>
-          <div class="text-left">
-            <h3 class="text-white font-semibold">Phone</h3>
-            <p class="text-gray-300">+63 912 345 6789</p>
-          </div>
-        </div>
-
-        <!-- Location Card -->
-        <div class="flex items-start gap-4 bg-gray-900 border border-white/20 shadow-md rounded-xl p-6 hover:shadow-lg hover:scale-105 transition duration-300">
-          <div class="text-white text-xl mt-1">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
-          <div class="text-left">
-            <h3 class="text-white font-semibold">Location</h3>
-            <p class="text-gray-300">Davao City, Philippines</p>
-          </div>
-        </div>
+          <!-- Send Button -->
+          <button type="submit" class="flex items-center gap-2 justify-center border border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition font-semibold">
+            <i class="fas fa-paper-plane"></i>
+            Send Message
+          </button>
+        </form>
       </div>
 
     </div>
   </div>
 </section>
 
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- EmailJS -->
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
+  // Initialize EmailJS
+  emailjs.init("YEpgZJfltjkh1RVxh"); // Replace with your User ID
+
   const form = document.getElementById("contactForm");
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
 
-    let valid = true;
+  form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent page reload
 
-    // Name validation
-    const name = document.getElementById("name");
-    const nameWarning = document.getElementById("nameWarning");
-    if (name.value.trim() === "") {
-      nameWarning.classList.remove("hidden");
-      valid = false;
-    } else {
-      nameWarning.classList.add("hidden");
-    }
-
-    // Email validation
-    const email = document.getElementById("email");
-    const emailWarning = document.getElementById("emailWarning");
-    const emailRegex = /^\S+@\S+\.\S+$/;
-    if (!emailRegex.test(email.value.trim())) {
-      emailWarning.classList.remove("hidden");
-      valid = false;
-    } else {
-      emailWarning.classList.add("hidden");
-    }
-
-    // Subject validation
-    const subject = document.getElementById("subject");
-    const subjectWarning = document.getElementById("subjectWarning");
-    if (subject.value.trim() === "") {
-      subjectWarning.classList.remove("hidden");
-      valid = false;
-    } else {
-      subjectWarning.classList.add("hidden");
-    }
-
-    // Message validation
-    const message = document.getElementById("message");
-    const messageWarning = document.getElementById("messageWarning");
-    if (message.value.trim() === "") {
-      messageWarning.classList.remove("hidden");
-      valid = false;
-    } else {
-      messageWarning.classList.add("hidden");
-    }
-
-    if(valid) {
-      alert("Form submitted successfully!");
-      form.reset();
-    }
+    emailjs.sendForm('service_2w3kdug', 'template_2du8ic2', this)
+      .then(() => {
+        alert('Message sent successfully!');
+        form.reset();
+      }, (err) => {
+        alert('Oops! Something went wrong.');
+        console.error(err);
+      });
   });
 </script>
 
@@ -525,11 +452,6 @@
   <!-- Instagram -->
   <a href="#" class="text-white text-lg transition duration-300 hover:text-[#E4405F]">
     <i class="fab fa-instagram"></i>
-  </a>
-
-  <!-- Gmail -->
-  <a href="mailto:youremail@example.com" class="text-white text-lg transition duration-300 hover:text-[#D44638]">
-    <i class="fas fa-envelope"></i>
   </a>
 </div>
 

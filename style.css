@@ -1,0 +1,31 @@
+body {
+      background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), transparent 50%),
+                  radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.05), transparent 50%),
+                  linear-gradient(180deg, #0a0f2c 0%, #000000 100%);
+    }
+    .nav-link {
+      position: relative;
+      transition: color 0.3s;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: white;
+      transition: width 0.3s;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    /* Floating tech icons animation */
+    @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
