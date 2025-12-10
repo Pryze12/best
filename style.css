@@ -20,6 +20,7 @@ body {
     .nav-link:hover::after {
       width: 100%;
     }
+    
     /* Floating tech icons animation */
     @keyframes float {
     0%, 100% { transform: translateY(0); }
